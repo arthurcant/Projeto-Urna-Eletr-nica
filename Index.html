@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Urna Eletrônica</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <div class="urna">
+       <!--  <img src="images/Unifg.jpg"/> -->
         <div class="tela">
             <div class="d-1">
             <div class="d-1-left">
@@ -40,12 +45,14 @@
             </div>
             </div>
             <div class="d-2">
-                Aperte a tela: <br>
+                Aperte a tecla: <br>
                 CONFIMAR para confirmar este voto <br>
                 CORRIGE para RENICIAR  este voto.
             </div>     
         </div>
+        
         <div class="teclado">
+            <br>
             <div class="teclado--linha">
                 <div class="teclado--botao" onclick="clicou('1')">1</div>
                 <div class="teclado--botao" onclick="clicou('2')">2</div>
@@ -64,11 +71,13 @@
             <div class="teclado--linha">
                 <div class="teclado--botao" onclick="clicou('0')">0</div>
             </div>
+            <br>
             <div class="teclado--linha">
                 <div class="teclado--botao botao--branco" onclick="branco()">BRANCO</div>
                 <div class="teclado--botao botao--corrige" onclick="corrige()">CORRIGE</div>
-                <div class="teclado--botao botao--confirma" onclick="confirma()">CONFIMA</div>
+                <div class="teclado--botao botao--confirma" onclick="confirma()">CONFIRMAR</div>
             </div>
+            <br>
         </div>
     </div>
 
