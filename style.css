@@ -34,18 +34,15 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
-    background: --blue;
-    background: linear-gradient(214deg, rgba(60,66,205,1) 0%, rgba(20,37,156,1) 50%, rgba(1,0,88,1) 100%);
 }
 
 .urna {
-    width: 80%;
+    width: 100%;
     background: var(--salmon);
     padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
 }
 
 .tela {
@@ -222,6 +219,7 @@ body {
         height: 500px;
         flex-direction: row;
         justify-content: space-between;
+        border-radius: 10px;
     }
     
     .tela{
