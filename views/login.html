@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urna dos estudantes - Login</title>
     <link rel="stylesheet" href="../wwwroot/css/login-register.css">
-    <link rel="shortcut icon" href="img/urna.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../wwwroot/images/login-register/urna.svg" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,11 +39,17 @@
                             <input type="password" name="fieldPassword" id="fieldPassword" required>
                         </div>
                         
-                        <input type="button" value="Entrar">
+                        <input type="button" value="Entrar" onclick="entrar()">
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function entrar(){
+            window.location.href = "user_options.html"
+        }
+    </script>
 </body>
 </html>

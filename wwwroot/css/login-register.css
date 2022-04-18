@@ -136,6 +136,19 @@
     cursor: pointer;
 }
 
+.formContainer input[type="submit"]{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    background-color: var(--lightblue);
+    color: var(--white);
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 @media (min-width: 1281px) {
     .background{
         width: 100%;

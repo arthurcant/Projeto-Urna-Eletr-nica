@@ -113,10 +113,10 @@ function confirma() {
         if(etapas[etapaAtual] !== undefined) {
             comecarEtapa();
         } else {
-            var audio = new Audio('som/SomdeUrna.mp3')
+            var audio = new Audio('../../som/SomdeUrna.mp3')
             audio.addEventListener('canplaythrough', function() {
                 audio.play();
-              });
+              })
             document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM</div>';
             console.log(votos);
         }
