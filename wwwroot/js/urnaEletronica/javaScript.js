@@ -59,6 +59,7 @@ function atualizaInterface() {
         seuVotoPara.style.display = 'block';
         aviso.style.display = 'block';
         descricao.innerHTML = '<div class="aviso--grande pisca">VOTO NULO</div>';
+        window.setTimeout("location.href='user_options.html'", 3000)
     }
 }
 
@@ -84,6 +85,7 @@ function branco() {
     aviso.style.display = 'block';
     numeros.innerHTML = '';
     descricao.innerHTML = '<div class="aviso--grande pisca">VOTO EM BRANCO</div>';
+    window.setTimeout("location.href='user_options.html'", 3000)
     lateral.innerHTML = '';
 }
 function corrige() {
