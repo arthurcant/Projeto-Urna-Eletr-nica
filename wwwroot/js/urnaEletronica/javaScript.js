@@ -119,6 +119,8 @@ function confirma() {
               })
             document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM</div>';
             console.log(votos);
+
+            window.setTimeout("location.href='user_options.html'", 3000)
         }
     }
 }

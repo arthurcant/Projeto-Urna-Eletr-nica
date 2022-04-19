@@ -217,8 +217,7 @@ body {
 
 @media (min-width: 1281px) {
     body{
-        background: --blue;
-        background: linear-gradient(214deg, rgba(60,66,205,1) 0%, rgba(20,37,156,1) 50%, rgba(1,0,88,1) 100%);
+        background-image: url("../images/background.jpg");
     }
     
     .urna{
