@@ -1,0 +1,113 @@
+:root{
+    --white: #fff;
+    --grey: #242424;
+    --lightgreen: #D4E1E0;
+    --lightblue: #00B2FF;
+    --lightgrey: #EBEBEB;
+    --red: #f00;
+    --orange: #f09046;
+}
+
+*{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+}
+
+.containerGeral{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    text-align: justify;
+}
+
+.area-img img{
+    border-radius: 10px;
+    border: 10px solid var(--orange);
+}
+
+.goBack{
+    width: 30%;
+    height: 20%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.goBack a{
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    margin-top: 20px;
+    border: none;
+    background-color: var(--lightblue);
+    color: var(--white);
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.description {
+    width: 200px;
+}
+
+@media (min-width: 1281px) {
+    .background{
+        min-width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../images/background.jpg");
+    }
+    
+    .allPersons{
+        min-width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .containerGeral {
+        width: 60%;
+        max-height: 650px;
+        min-height: 500px;
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+        background-color: var(--white);
+        border-radius: 20px;
+    }
+
+    .goBack{
+        margin-right: 80%;
+        width: 150px;
+        height: 20%;
+    }
+ 
+    .allPersons{
+        height: 80%;
+    }
+}
