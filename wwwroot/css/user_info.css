@@ -34,7 +34,8 @@
 }
 
 .info img{
-    width: 60px;
+    margin-top: 50px;
+    width: 100px;
 }
 
 .info h2{
@@ -86,13 +87,32 @@
 
     .goBack{
         width: 150px;
-        height: 30%;
+        height: 20%;
     }
 
     .info{
-        margin-top: 10%;
+        margin: 0;
+        width: 90%;
         height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .userInfo{
+        display: flex;
+        flex-direction: column;
         align-items: flex-start;
         margin-left: 20px;
+        width: 100%;
+    }
+
+    .imginf {
+        width: 45%;
+    }
+
+    .imginf img{
+        width: 200px;
     }
 }
