@@ -8,6 +8,23 @@ const Eleitor = mongoose.model(
             type: String,
             required: true
         },
+        matricula:{
+            type: String,
+            required: true
+        },
+        password: {
+            type: String,
+            required: true
+        },
+        email:{
+            type: String,
+            required: true
+        },
+        alreadyVoted: {
+            type: Boolean,
+            required: true,
+            default: false
+        }
         
     }, { timestamps: true })
 )
