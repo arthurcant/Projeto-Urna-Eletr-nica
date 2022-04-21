@@ -1,4 +1,4 @@
-const User = require('../models/User')
+const Eleitor = require('../models/Eleitor')
 
 module.exports = class UserController {
     static async getAllUsers(req, res) {

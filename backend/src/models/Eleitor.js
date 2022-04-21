@@ -1,8 +1,8 @@
 const mongoose = require('../db/connect')
 const Schema = mongoose.Schema
 
-const User = mongoose.model(
-    'User',
+const Eleitor = mongoose.model(
+    'Eleitor',
     new Schema({
         name: {
             type: String,
@@ -12,4 +12,4 @@ const User = mongoose.model(
     }, { timestamps: true })
 )
 
-module.exports = User
+module.exports = Eleitor
