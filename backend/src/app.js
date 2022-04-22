@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 
+
 const EleitorRoutes = require('./routes/EleitorRoutes') 
 const CandidatoRoutes = require('./routes/CandidatoRoutes') 
 
