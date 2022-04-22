@@ -19,6 +19,7 @@ module.exports = class UserController {
 
         if(!name || !matricula || !password || !email) {
             res.status(400).json({ message: 'Preencha todos os campos necessários!' })
+            return
         }
 
         const newEleitor = new Eleitor({
