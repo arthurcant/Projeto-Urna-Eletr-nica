@@ -39,4 +39,38 @@ module.exports = class CandidatoController {
             return
         }
     }
+
+    static async giveVoteForCandidato(req, res) {
+        const idCandidato = req.body.idCandidato
+        const emailEleitor = req.body.emailEleitor
+
+        const candidatoExists = await Candidatos.findOne({ _id: idCandidato })
+
+        if (!emailEleitor) {
+            res.status(404).json({ message: 'Entregue seu email' })
+            return
+        }
+
+        if (!candidatoExists) {
+            res.status(404).json({ message: 'Candidato não encontrado' })
+            return
+        }
+
+        const candidatoVoted = candidatoExists
+
+        candidatoVoted.votes.push(emailEleitor)
+
+        try {
+
+            await Candidatos.findOneAndUpdate(
+                { _id: idCandidato },
+                { $set: candidatoVoted },
+                { new: true }
+            )
+            res.status(200).json({ message: 'Parabéns, você votou!'})
+        } catch (error) {
+            res.status(500).json({ message: 'Error ' + error })
+        }
+
+    }
 }
