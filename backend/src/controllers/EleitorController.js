@@ -5,7 +5,10 @@ module.exports = class UserController {
         const allEleitors = await Eleitor.find()
 
         if (allEleitors) {
-            res.status(200).json(allEleitors)
+            // res.status(200).json(allEleitors)
+            res.render("pages/user_info", {
+                allEleitors
+            })
             return
         } else {
             res.status(404).json({ message: 'Nenhum eleitor cadastrado' })
@@ -39,4 +42,5 @@ module.exports = class UserController {
             return
         }
     }
+    
 }

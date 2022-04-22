@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna dos estudantes - Informações</title>
+    {{! <link rel="stylesheet" href="css/user_info.css"> }}
+    <link rel="stylesheet" href="css/user_info.css">
+    <link rel="shortcut icon" href="images/login-register/urna.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="containerGeral">
+            <div class="goBack">
+                <a href="user_options.html">← Voltar</a>
+            </div>
+
+            <div class="info">
+                {{#allEleitors}}
+                <div class="userInfo">
+                    <div class="title">
+                        <h2>Informações do Usuário:</h2>
+                    </div>
+                    <p><b>Nome:</b> {{name}}</p><br>
+                    <p><b>Código:</b> {{matricula}}</p><br>
+                    <p><b>Votou em:</b> {{email}}</p><br>
+                </div>
+                {{/allEleitors}}
+                <img class="imginf" src="images/login-register/user.png" alt="FG">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
