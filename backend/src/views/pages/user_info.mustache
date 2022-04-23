@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urna dos estudantes - Informações</title>
-    <link rel="stylesheet" href="../wwwroot/css/user_info.css">
-    <link rel="shortcut icon" href="../wwwroot/images/login-register/urna.svg" type="image/x-icon">
+    {{! <link rel="stylesheet" href="css/user_info.css"> }}
+    <link rel="stylesheet" href="css/user_info.css">
+    <link rel="shortcut icon" href="images/login-register/urna.svg" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,15 +21,17 @@
             </div>
 
             <div class="info">
+                {{#allEleitors}}
                 <div class="userInfo">
                     <div class="title">
                         <h2>Informações do Usuário:</h2>
                     </div>
-                    <p><b>Nome:</b> Exemplo</p><br>
-                    <p><b>Código:</b> 12345</p><br>
-                    <p><b>Votou em:</b> Exemplo</p><br>
+                    <p><b>Nome:</b> {{name}}</p><br>
+                    <p><b>Código:</b> {{matricula}}</p><br>
+                    <p><b>Votou em:</b> {{email}}</p><br>
                 </div>
-                <img class="imginf" src="../wwwroot/images/login-register/user.png" alt="FG">
+                {{/allEleitors}}
+                <img class="imginf" src="images/login-register/user.png" alt="FG">
             </div>
         </div>
     </div>
